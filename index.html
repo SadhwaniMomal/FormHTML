@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        h1 {
+            text-align: center;
+        }
+
+        fieldset {
+            width: 30%;
+            margin: 50px 500px;
+        }
+
+        input {
+            margin: 10px;
+            padding: 10px;
+        }
+
+        #email {
+            margin-left: 35px;
+        }
+
+        #city {
+            margin: 10px 45px;
+        }
+
+        #gender {
+            margin: 10px 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>LoginForm</h1>
+
+    <hr>
+    <form action="resgister.html">
+        <fieldset>
+            <legend>Login Form</legend>
+            <div>
+                <label for="UserName">Username</label>
+                <input type="text" id="UserName" required placeholder="Enter Your Name">
+            </div>
+
+            <div>
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" required placeholder="Email">
+            </div>
+
+            <div>
+                <label for="city">City</label>
+                <select name="city" id="city" required>
+                    <option value="City">select Your City</option>
+                    <optgroup label="City">
+                        <option value="Hyd">Hyderabad</option>
+                        <option value="Khi">Karachi</option>
+                    </optgroup>
+                    <optgroup label="Tharpakkar">
+                        <option value="mithi">Mithi</option>
+                        <option value="naukot">naukot</option>
+                    </optgroup>
+                </select>
+            </div>
+
+            <div>
+                <label for="gender">Gender:</label>
+                <input type="radio" name="gender" required id="gender">
+                <label for="gender">Male</label>
+                <input type="radio" name="gender" required id="gender">
+                <label for="gender">Female</label>
+            </div>
+
+            <div>
+                <label for="birth">Birth Date</label>
+                <input type="date" name="birth" required id="birth">
+            </div>
+
+            <div>
+                <label for="exp">Work Experience</label><br>
+                <input type="range" name="exp" required id="exp">
+            </div>
+
+            <input type="submit" value="Resgister">
+
+
+
+
+        </fieldset>
+    </form>
+</body>
+
+</html>
